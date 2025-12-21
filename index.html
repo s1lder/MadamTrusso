@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Магазин Madam Trusso</title>
+<!-- Подключение современного шрифта -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  header {
+    background-color: #f2e0d0;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+  }
+  nav {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  nav a {
+    text-decoration: none;
+    color: #d64545;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  nav a:hover {
+    background-color: #f6c90e;
+    color: #fff;
+  }
+  section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  h2 {
+    color: #d64545;
+    margin-bottom: 15px;
+  }
+  #main {
+    background-color: #f9f9f9;
+  }
+  /* Карточки товаров */
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  .product-card img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .product-card h3 {
+    margin: 10px 0 8px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .product-card p {
+    margin: 5px 0;
+  }
+  .price {
+    font-weight: bold;
+    color: #d64545;
+    margin-top: 8px;
+    font-size: 16px;
+  }
+  .buy-btn {
+    background-color: #d64545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  .buy-btn:hover {
+    background-color: #a4383a;
+  }
+  /* Дополнительные стили для разделов */
+  #about, #contacts, #promotions {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  /* Больше пространства для текста */
+  p {
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Магазин Madam Trusso</h1>
+</header>
+
+<!-- Навигационное меню -->
+<nav>
+  <a href="#main">Главная</a>
+  <a href="#about">О нас</a>
+  <a href="#panties">Трусы</a>
+  <a href="#pajamas">Пижамы</a>
+  <a href="#corsets">Корсеты</a>
+  <a href="#tshirts">Футболки</a>
+  <a href="#promotions">Акции</a>
+  <a href="#contacts">Контакты</a>
+</nav>
+
+<!-- Главный раздел с товарами -->
+<section id="main">
+  <h2 style="text-align:center;">Наш магазин</h2>
+  <div class="products">
+    <!-- Товар 1 -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Трусы+1" alt="Классические трусы" />
+      <h3>Классические трусы</h3>
+      <p>Удобные и стильные трусы для каждого дня.</p>
+      <p class="price">30 p</p>
+      <button class="buy-btn">Купить</button>
+    </div>
+    <!-- Товар 2 -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Пижама" alt="Пижама" />
+      <h3>Мягкая пижама</h3>
+      <p>Комфортная пижама для уютных ночей.</p>
+      <p class="price">90 p</p>
+      <button class="buy-btn">Купить</button>
+    </div>
+    <!-- Товар 3 -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Корсет" alt="Корсет" />
+      <h3>Элегантный корсет</h3>
+      <p>Подчеркните фигуру с нашим корсетом.</p>
+      <p class="price">150 p</p>
+      <button class="buy-btn">Купить</button>
+    </div>
+  </div>
+</section>
+
+<!-- Раздел "О нас" -->
+<section id="about">
+  <h2>О нас</h2>
+  <p>Madam Trusso — это магазин стильной и комфортной одежды для женщин. Мы предлагаем только качественные товары, соответствующие последним трендам моды.</p>
+</section>
+
+<!-- Раздел "Трусы" -->
+<section id="panties">
+  <h2>Трусы</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Трусы+2" alt="Боксеры" />
+      <h3>Боксеры</h3>
+      <p>Мягкие и удобные.</p>
+      <p class="price">45 p</p>
+      <button class="buy-btn">Купить</button>
+    </div>
+    <!-- Добавьте свои товары сюда -->
+  </div>
+</section>
+
+<!-- Раздел "Пижамы" -->
+<section id="pajamas">
+  <h2>Пижамы</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Пижама+2" alt="Хлопковая пижама" />
+      <h3>Хлопковая пижама</h3>
+      <p>Особенно мягкая и уютная.</p>
+      <p class="price">110 p</p>
+      <button class="buy-btn">Купить</button>
+    </div>
+  </div>
+</section>
+
+<!-- Раздел "Корсеты" -->
+<section id="corsets">
+  <h2>Корсеты</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Корсет+3" alt="Черный корсет" />
+      <h3>Черный корсет</h3>
+      <p>Стильный и эффектный.</p>
+      <p class="price">80 p</p>
+      <button class="buy-btn">Купить</button>
+    </div>
+  </div>
+</section>
+
+<!-- Раздел "Футболки" -->
+<section id="tshirts">
+  <h2>Футболки</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200?text=Футболка+1" alt="Белая футболка" />
+      <h3>Белая футболка</h3>
+      <p>Классика на каждый день.</p>
+      <p class="price"> 50 p</p>
+      <button class="buy-btn">Купить</button>
+    </div>
+  </div>
+</section>
+
+<!-- Раздел "Акции" -->
+<section id="promotions">
+  <h2>Акции и новинки</h2>
+  <p>Следите за нашими специальными предложениями и новинками!</p>
+</section>
+
+<!-- Контакты -->
+<section id="contacts">
+  <h2>Контакты</h2>
+  <p>Телефон: +375 291549990</p>
+  <p>Email: info@madamtrusso.ru</p>
+</section>
+
+</body>
+</html>
